@@ -1,0 +1,18 @@
+text_to_sql_bfsi/
+├── app/
+│   ├── __init__.py               <-- (Empty file)
+│   ├── main.py                   <-- (Contains app = FastAPI(...))
+│   ├── config.py
+│   ├── database.py
+│   ├── models.py
+│   ├── api/                      <-- NEW FOLDER
+│   │   ├── __init__.py           <-- NEW (Empty file)
+│   │   └── routes.py             <-- NEW (Code provided above)
+│   ├── llm/
+│   │   ├── __init__.py
+│   │   ├── client.py
+│   │   └── prompt.py
+│   └── sql/
+│       ├── __init__.py
+│       ├── validator.py
+│       └── executor.py

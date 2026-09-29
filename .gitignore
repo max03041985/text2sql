@@ -1,0 +1,20 @@
+# Environment variables (contains credentials)
+.env
+.env.local
+.env.production
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# Data
+*.csv
+*.xlsx
+postgres_data/

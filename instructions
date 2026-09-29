@@ -1,0 +1,6 @@
+.\.venv\Scripts\streamlit.exe run ui/app.py --server.port 8501
+
+Ollama (ollama serve)
+FastAPI (uv run uvicorn app.main:app ...)
+Streamlit (uv run streamlit run ui/app.py ...)
+    

@@ -1,0 +1,13 @@
+fastapi==0.111.0
+uvicorn==0.30.1
+pydantic==2.7.1
+pydantic-settings==2.2.1
+sqlalchemy==2.0.30
+asyncpg==0.29.0
+psycopg[binary]==3.1.19        # <-- NEW (works on PG and GP)
+httpx==0.27.0
+sqlglot==23.3.0
+pandas==2.2.2
+streamlit==1.35.0
+plotly==5.22.0
+python-multipart==0.0.9

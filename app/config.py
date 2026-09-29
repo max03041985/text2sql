@@ -1,5 +1,7 @@
-from pydantic_settings import BaseSettings, SettingsConfigDict
 from typing import Literal
+
+from pydantic_settings import BaseSettings, SettingsConfigDict
+
 
 class Settings(BaseSettings):
     # --- Database ---
@@ -8,7 +10,7 @@ class Settings(BaseSettings):
 
     # --- LLM ---
     OLLAMA_URL: str = "http://localhost:11434/api/chat"
-    LLM_MODEL: str = "qwen2.5-coder:14b"
+    LLM_MODEL: str = "qwen3.5:4b"
     LLM_TEMPERATURE: float = 0.1
     LLM_TIMEOUT: int = 600
 
@@ -29,6 +31,7 @@ class Settings(BaseSettings):
     UI_PORT: int = 8501
     CORS_ORIGINS: str = "*"
     API_BASE_URL: str = "http://localhost:8000"
+    API_REQUEST_TIMEOUT: int = 1230
 
     # --- Logging ---
     LOG_LEVEL: str = "INFO"

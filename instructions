@@ -1,6 +1,6 @@
 .\.venv\Scripts\streamlit.exe run ui/app.py --server.port 8501
 
-Ollama (ollama serve)
+Ollama usually runs as a background service. Check that it is available with `ollama list` or `curl http://localhost:11434/api/version`. Run `ollama serve` only if no Ollama server is already running. If it reports that port 11434 is already in use, the server is already running; do not start a second instance.
 FastAPI (uv run uvicorn app.main:app ...)
 Streamlit (uv run streamlit run ui/app.py ...)
     
